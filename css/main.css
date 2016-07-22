@@ -71,6 +71,7 @@ li a:focus {
 .btn-codify-primary {
 	background-color: #d9534f;
     border-color: #d9534f;
+    transition: 0.3s all ease-in-out;
 }
 
 .btn-codify-primary:focus,
