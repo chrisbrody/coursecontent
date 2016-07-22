@@ -40,6 +40,7 @@ li > span {
 }
 
 li a {
+	border-radius: 10px;
 	color: #fff;
 	display: inline-block;
 	font-size: 0.9rem;
@@ -50,19 +51,35 @@ li a {
 
 li a:hover,
 li a:focus {
-	color: #C4C4C4;
+	border: 1px solid transparent;
+    color: #fff;
 	text-decoration: none;
 } 
 
 .btn-codify-secondary {
 	background-color: #1abc9c;
+	border: 1px solid #1ccaa7;
+	transition: 0.3s all ease-in-out;
+}
+
+.btn-codify-secondary:focus,
+.btn-codify-secondary:hover {
+	background-color: #1ccaa7;
+	border: 1px solid #1abc9c;
 }
 
 .btn-codify-primary {
-	background-color: red;
+	background-color: #d9534f;
+    border-color: #d9534f;
 }
 
+.btn-codify-primary:focus,
+.btn-codify-primary:hover  {
+	background-color: #d9534f;
+    border-color: #d9534f;
+}
 
 .currentElement {
 	height: 100% !important;
+	transition: 0.3s all ease-in-out;
 }
