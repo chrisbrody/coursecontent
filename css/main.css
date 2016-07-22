@@ -53,6 +53,7 @@ li a:hover,
 li a:focus {
 	border: 1px solid transparent;
     color: #fff;
+    cursor: pointer;
 	text-decoration: none;
 } 
 
@@ -69,18 +70,21 @@ li a:focus {
 }
 
 .btn-codify-primary {
-	background-color: #d9534f;
-    border-color: #d9534f;
+	background-color: #3E4246;
+    border-color: #54595f;
     transition: 0.3s all ease-in-out;
 }
 
 .btn-codify-primary:focus,
 .btn-codify-primary:hover  {
-	background-color: #d9534f;
-    border-color: #d9534f;
+	background-color: #54595f;
+    border-color: #3E4246;
 }
 
 .currentElement {
 	height: 100% !important;
-	transition: 0.3s all ease-in-out;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
 }
