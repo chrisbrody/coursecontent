@@ -2,17 +2,26 @@ app.controller('week13Ctrl', function($scope) {
 	$scope.week13 = {
 		emailvalidation : {
 			demo : 'http://codifyacademy.com/emailvalidation/',
-			source : 'sourcecode/wk13/emailvalidationsource.zip'
+			source : 'sourcecode/wk13/emailvalidationsource.zip',
+			title : 'Email Validation'
 		},
 		profile : {
 			demo : 'http://codifyacademy.com/profile/',
-			source : 'sourcecode/wk13/profilesource.zip'
+			source : 'sourcecode/wk13/profilesource.zip',
+			title : 'User Profile App'
 		},
-		source : 'sourcecode/wk13/week13jssource.zip',
+		classcode :  {
+			title : 'In Class JavaScript ',
+			url : 'sourcecode/wk13/week13jssource.zip'
+		},
 		survey : {
 			demo : 'http://codifyacademy.com/survey',
-			source : 'sourcecode/wk13/surveysource.zip'
+			source : 'sourcecode/wk13/surveysource.zip',
+			title : 'Survey App'
 		},
-		youtube : ''
+		youtube : {
+			title : 'YouTube Channel',
+			url : ''
+		}
 	}
 })

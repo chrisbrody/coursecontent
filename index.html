@@ -1,426 +1,441 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<head>
+		<!-- meta content -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta name="description" content="Codify Academy's Course Content Links">
+	    <meta name="author" content="Chris Brody @ Codify Academy">
 
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/angular.min.js"></script>
-</head>
+	    <!-- title -->
+		<title>Codify Academy Course Content Links</title>
 
-<body ng-app="myApp">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<!-- css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<!-- javascript -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.min.js"></script>
+	</head>
 
-	<div ng-controller="myCtrl">
-		<h1>{{ title }}</h1>
-	</div>
-	<!-- week 1 -->
-	<div ng-controller="week1Ctrl">
-		<h2>Week: 1</h2>
-		<h3>Basic HTML &amp; CSS and Website Replications</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week1.youtube}}" target="_blank">Week 1 Videos</a>
-			</li>
-			<li>
-				Google Replication 
-				<a class="btn btn-secondary" href="{{week1.google.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week1.google.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Logo Replication 
-				<a class="btn btn-secondary" href="{{week1.logo.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week1.logo.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Strict Replication 
-				<a class="btn btn-secondary" href="{{week1.strict.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week1.strict.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Pico Website Debug 
-				<a class="btn btn-secondary" href="{{week1.pico.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week1.pico.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
-	<!-- week 2 -->
-	<div ng-controller="week2Ctrl">
-		<h2>Week: 2</h2>
-		<h3>Intermediate HTML &amp; CSS with Paper Prototyping</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week2.youtube}}" target="_blank">Week 2 Videos</a>
-			</li>
-			<li>
-				37Signals Sales Page Replication 
-				<a class="btn btn-secondary" href="{{week2.signals.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week2.signals.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Visual Arts Blog Replication 
-				<a class="btn btn-secondary" href="{{week2.visual.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week2.visual.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Metro App Replication 
-				<a class="btn btn-secondary" href="{{week2.metro.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week2.metro.source}}" download>Source Code</a>
-			</li>
-			<li>
-				MyFolio Portfolio Debug 
-				<a class="btn btn-secondary" href="{{week2.myfolio.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week2.myfolio.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+	<body ng-app="myApp">
 
-	<!-- week 3 -->
-	<div ng-controller="week3Ctrl">
-		<h2>Week: 3</h2>
-		<h3>Advanced HTML &amp; CSS and PSD Conversions</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week3.youtube}}" target="_blank">Week 3 Videos</a>
-			</li>
-			<li>
-				Orange Juice
-				<a class="btn btn-secondary" href="{{week3.orange.demo}}" target="_blank">Image Source</a>
-			</li>
-			<li>
-				Liquid Gem
-				<a class="btn btn-secondary" href="{{week3.liquid.demo}}" target="_blank">Image Source</a>
-			</li>
-			<li>
-				Colorful Flat
-				<a class="btn btn-secondary" href="{{week3.colorful.demo}}" target="_blank">Image Source</a>
-			</li>
-		</ol>
-	</div>
+		<div ng-controller="myCtrl">
+			<h1>{{ title }}</h1>
+		</div>
+		<!-- week 1 -->
+		<div ng-controller="week1Ctrl">
+			<h2>Week: 1</h2>
+			<h3>Basic HTML &amp; CSS and Website Replications</h3>
+			<ol>
+				<li>
+					<span>{{week1.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week1.youtube.url}}" target="_blank">Week 1 Videos</a>
+				</li>
+				<li>
+					<span>{{week1.google.title}}</span>
+					<a class="btn-codify-secondary" href="{{week1.google.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week1.google.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week1.logo.title}}</span>
+					<a class="btn-codify-secondary" href="{{week1.logo.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week1.logo.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week1.strict.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week1.strict.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week1.strict.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week1.pico.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week1.pico.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week1.pico.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
+		<!-- week 2 -->
+		<div ng-controller="week2Ctrl">
+			<h2>Week: 2</h2>
+			<h3>Intermediate HTML &amp; CSS with Paper Prototyping</h3>
+			<ol>
+				<li>
+					<span>{{week2.youtube.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week2.youtube.url}}" target="_blank">Week 2 Videos</a>
+				</li>
+				<li>
+					<span>{{week2.signals.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week2.signals.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week2.signals.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week2.visual.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week2.visual.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week2.visual.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week2.metro.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week2.metro.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week2.metro.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week2.myfolio.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week2.myfolio.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week2.myfolio.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 4 -->
-	<div ng-controller="week4Ctrl">
-		<h2>Week: 4</h2>
-		<h3>Responsive Web Design and Bootstrap</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week4.youtube}}" target="_blank">Week 4 Videos</a>
-			</li>
-			<li>
-				Google Responsive
-				<a class="btn btn-secondary" href="{{week4.googleresponsive.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week4.googleresponsive.source}}" download>Source Code</a>
-			</li>
-			<li>
-				37 Signals Responsive
-				<a class="btn btn-secondary" href="{{week4.signalsresponsive.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week4.signalsresponsive.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 3 -->
+		<div ng-controller="week3Ctrl">
+			<h2>Week: 3</h2>
+			<h3>Advanced HTML &amp; CSS and PSD Conversions</h3>
+			<ol>
+				<li>
+					<span>{{week3.youtube.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week3.youtube.url}}" target="_blank">Week 3 Videos</a>
+				</li>
+				<li>
+					<span>{{week3.orange.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week3.orange.demo}}" target="_blank">Image Source</a>
+				</li>
+				<li>
+					<span>{{week3.liquid.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week3.liquid.demo}}" target="_blank">Image Source</a>
+				</li>
+				<li>
+					<span>{{week3.colorful.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week3.colorful.demo}}" target="_blank">Image Source</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 5 -->
-	<div ng-controller="week5Ctrl">
-		<h2>Week: 5</h2>
-		<h3>More Bootstrap and Business Theme Editing</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week5.youtube}}" target="_blank">Week 5 Videos</a>
-			</li>
-			<li>
-				Bootstrap Themes
-				<a class="btn btn-secondary" href="{{week5.themes}}" target="_blank">Blacktie.co</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 4 -->
+		<div ng-controller="week4Ctrl">
+			<h2>Week: 4</h2>
+			<h3>Responsive Web Design and Bootstrap</h3>
+			<ol>
+				<li>
+					<span>{{week4.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week4.youtube.url}}" target="_blank">Week 4 Videos</a>
+				</li>
+				<li>
+					<span>{{week4.googleresponsive.title}}</span>
+					<a class="btn-codify-secondary" href="{{week4.googleresponsive.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week4.googleresponsive.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week4.signalsresponsive.title}}</span>
+					<a class="btn-codify-secondary" href="{{week4.signalsresponsive.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week4.signalsresponsive.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 6 -->
-	<div ng-controller="week6Ctrl">
-		<h2>Week: 6</h2>
-		<h3>jQuery and Personal Theme Editing</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week6.youtube}}" target="_blank">Week 6 Videos</a>
-			</li>
-			<li>
-				Class jQuery Code
-				<a class="btn btn-secondary" href="{{week6.source}}" target="_blank">Source</a>
-			</li>
-			<li>
-				Bootstrap Themes
-				<a class="btn btn-secondary" href="{{week6.themes}}" target="_blank">Blacktie.co</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 5 -->
+		<div ng-controller="week5Ctrl">
+			<h2>Week: 5</h2>
+			<h3>More Bootstrap and Business Theme Editing</h3>
+			<ol>
+				<li>
+					<span>{{week5.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week5.youtube.url}}" target="_blank">Week 5 Videos</a>
+				</li>
+				<li>
+					<span>{{week5.themes.title}}</span>
+					<a class="btn-codify-secondary" href="{{week5.themes.url}}" target="_blank">Blacktie.co</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 7 -->
-	<div ng-controller="week7Ctrl">
-		<h2>Week: 7</h2>
-		<h3>Basic JavaScript and Personal Website Creating</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week7.youtube}}" target="_blank">Week 7 Videos</a>
-			</li>
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week7.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				Codify Themes
-				<a class="btn btn-secondary" href="{{week7.themes}}" target="_blank">codifyacademy.com/themes</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 6 -->
+		<div ng-controller="week6Ctrl">
+			<h2>Week: 6</h2>
+			<h3>jQuery and Personal Theme Editing</h3>
+			<ol>
+				<li>
+					<span>{{week6.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week6.youtube.url}}" target="_blank">Week 6 Videos</a>
+				</li>
+				<li>
+					<span>{{week6.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week6.classcode.source}}" target="_blank">Source</a>
+				</li>
+				<li>
+					<span>{{week6.themes.title}}</span>
+					<a class="btn-codify-secondary" href="{{week6.themes.url}}" target="_blank">Blacktie.co</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 8 -->
-	<div ng-controller="week8Ctrl">
-		<h2>Week: 8</h2>
-		<h3>More JavaScript Logic and Simple Login System</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week8.youtube}}" target="_blank">Week 8 Videos</a>
-			</li>
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week8.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				Zodiac Project
-				<a class="btn btn-secondary" href="{{week8.zodiac.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week8.zodiac.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 7 -->
+		<div ng-controller="week7Ctrl">
+			<h2>Week: 7</h2>
+			<h3>Basic JavaScript and Personal Website Creating</h3>
+			<ol>
+				<li>
+					<span>{{week7.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week7.youtube.url}}" target="_blank">Week 7 Videos</a>
+				</li>
+				<li>
+					<span>{{week7.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week7.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week7.themes.title}}</span>
+					<a class="btn-codify-secondary" href="{{week7.themes.url}}" target="_blank">Themes</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 9 -->
-	<div ng-controller="week9Ctrl">
-		<h2>Week: 9</h2>
-		<h3>Creating Elements with JavaScript and To-do List</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week9.youtube}}" target="_blank">Week 9 Videos</a>
-			</li>
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week9.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				In Class Todo List
-				<a class="btn btn-secondary" href="{{week9.todo.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week9.todo.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Comment Application
-				<a class="btn btn-secondary" href="{{week9.comment.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week9.comment.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 8 -->
+		<div ng-controller="week8Ctrl">
+			<h2>Week: 8</h2>
+			<h3>More JavaScript Logic and Simple Login System</h3>
+			<ol>
+				<li>
+					<span>{{week8.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week8.youtube.url}}" target="_blank">Week 8 Videos</a>
+				</li>
+				<li>
+					<span>{{week8.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week8.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week8.zodiac.title}}</span>
+					<a class="btn-codify-secondary" href="{{week8.zodiac.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week8.zodiac.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 10 -->
-	<div ng-controller="week10Ctrl">
-		<h2>Week: 10</h2>
-		<h3>Intermediate JavaScript and User Registration System</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week10.youtube}}" target="_blank">Week 10 Videos</a>
-			</li>
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week10.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				In Class User Registration
-				<a class="btn btn-secondary" href="{{week10.registration.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week10.registration.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Quiz Application
-				<a class="btn btn-secondary" href="{{week10.quiz.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week10.quiz.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 9 -->
+		<div ng-controller="week9Ctrl">
+			<h2>Week: 9</h2>
+			<h3>Creating Elements with JavaScript and To-do List</h3>
+			<ol>
+				<li>
+					<span>{{week9.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week9.youtube.url}}" target="_blank">Week 9 Videos</a>
+				</li>
+				<li>
+					<span>{{week9.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week9.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week9.todo.title}}</span>
+					<a class="btn-codify-secondary" href="{{week9.todo.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week9.todo.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week9.comment.title}}</span>
+					<a class="btn-codify-secondary" href="{{week9.comment.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week9.comment.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 11 -->
-	<div ng-controller="week11Ctrl">
-		<h2>Week: 11</h2> 
-		<h3>Prepping for Hiring and More Intermediate JavaScript</h3>
-		<ol>
-			<li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week11.youtube}}" target="_blank">Week 11 Videos</a>
-			</li>
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week11.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				E-Commerce Web App
-				<a class="btn btn-secondary" href="{{week11.ecommerce.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week11.ecommerce.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 10 -->
+		<div ng-controller="week10Ctrl">
+			<h2>Week: 10</h2>
+			<h3>Intermediate JavaScript and User Registration System</h3>
+			<ol>
+				<li>
+					<span>{{week10.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week10.youtube.url}}" target="_blank">Week 10 Videos</a>
+				</li>
+				<li>
+					<span>{{week10.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week10.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week10.registration.title}}</span>
+					<a class="btn-codify-secondary" href="{{week10.registration.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week10.registration.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week10.quiz.title}}</span>
+					<a class="btn-codify-secondary" href="{{week10.quiz.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week10.quiz.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 12 -->
-	<div ng-controller="week12Ctrl">
-		<h2>Week: 12</h2>
-		<h3>JavaScript Date, Time &amp; User Events</h3>
-		<ol>
-			<!-- <li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week12.youtube}}" target="_blank">Week 12 Videos</a>
-			</li> -->
-			<li>
-				Guessing Game App
-				<a class="btn btn-secondary" href="{{week12.guessing.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week12.guessing.source}}" download>Source Code</a>
-			</li>
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week12.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				Digital Clock App
-				<a class="btn btn-secondary" href="{{week12.clock.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week12.clock.source}}" download>Source Code</a>
-			</li>
+		<!-- week 11 -->
+		<div ng-controller="week11Ctrl">
+			<h2>Week: 11</h2> 
+			<h3>Prepping for Hiring and More Intermediate JavaScript</h3>
+			<ol>
+				<li>
+					<span>{{week11.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week11.youtube.url}}" target="_blank">Week 11 Videos</a>
+				</li>
+				<li>
+					<span>{{week11.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week11.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week11.ecommerce.title}}</span>
+					<a class="btn-codify-secondary" href="{{week11.ecommerce.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week11.ecommerce.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-		</ol>
-	</div>
+		<!-- week 12 -->
+		<div ng-controller="week12Ctrl">
+			<h2>Week: 12</h2>
+			<h3>JavaScript Date, Time &amp; User Events</h3>
+			<ol>
+				<!-- <li>
+					<span>{{week12.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week12.youtube.url}}" target="_blank">Week 12 Videos</a>
+				</li> -->
+				<li>
+					<span>{{week12.guessing.title}}</span>
+					<a class="btn-codify-secondary" href="{{week12.guessing.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week12.guessing.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week12.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week12.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week12.clock.title}}</span>
+					<a class="btn-codify-secondary" href="{{week12.clock.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week12.clock.source}}" download>Source Code</a>
+				</li>
 
-	<!-- week 13 -->
-	<div ng-controller="week13Ctrl">
-		<h2>Week: 13</h2>
-		<h3>Methods &amp; Expressions and JavaScript Survey</h3>
-		<ol>
-			<!-- <li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week13.youtube}}" target="_blank">Week 13 Videos</a>
-			</li> -->
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week13.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				Email Validation
-				<a class="btn btn-secondary" href="{{week13.emailvalidation.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week13.emailvalidation.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Survey / Questionnaire App
-				<a class="btn btn-secondary" href="{{week13.survey.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week13.survey.source}}" download>Source Code</a>
-			</li>
-			<li>
-				User Profile App
-				<a class="btn btn-secondary" href="{{week13.profile.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week13.profile.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+			</ol>
+		</div>
 
-	<!-- week 14 -->
-	<div ng-controller="week14Ctrl">
-		<h2>Week: 14</h2>
-		<h3>Google APIs and More</h3>
-		<ol>
-			<!-- <li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week14.youtube}}" target="_blank">Week 14 Videos</a>
-			</li> -->
-			<li>
-				In Class Google Maps Api
-				<a class="btn btn-secondary" href="{{week14.googlemaps.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week14.googlemaps.source}}" download>Source Code</a>
-			</li>
-			<li>
-				In Class Google Books Api
-				<a class="btn btn-secondary" href="{{week14.googlebooks.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week14.googlebooks.source}}" download>Source Code</a>
-			</li>
-			<!-- <li>
-				Instagram Api
-				<a class="btn btn-secondary" href="{{week14.instagram.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week14.instagram.source}}" download>Source Code</a>
-			</li> -->
-		</ol>
-	</div>
+		<!-- week 13 -->
+		<div ng-controller="week13Ctrl">
+			<h2>Week: 13</h2>
+			<h3>Methods &amp; Expressions and JavaScript Survey</h3>
+			<ol>
+				<!-- <li>
+					<span>{{week13.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week13.youtube.url}}" target="_blank">Week 13 Videos</a>
+				</li> -->
+				<li>
+					<span>{{week13.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week13.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week13.emailvalidation.title}}</span>
+					<a class="btn-codify-secondary" href="{{week13.emailvalidation.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week13.emailvalidation.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week13.survey.title}}</span>
+					<a class="btn-codify-secondary" href="{{week13.survey.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week13.survey.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week13.profile.title}}</span>
+					<a class="btn-codify-secondary" href="{{week13.profile.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week13.profile.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- week 15 -->
-	<div ng-controller="week15Ctrl">
-		<h2>Week: 15</h2>
-		<h3>AngularJS Framework</h3>
-		<ol>
-			<!-- <li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week15.youtube}}" target="_blank">Week 15 Videos</a>
-			</li> -->
-			<li>
-				In Class Angular JavaScript 
-				<a class="btn btn-secondary" href="{{week15.source}}" target="_blank">Source Code</a>
-			</li>
-			<li>
-				In Class Angular Routing
-				<a class="btn btn-secondary" href="{{week15.angrouting.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-secondary" href="{{week15.angrouting.original}}" download>Original</a> 
-				<a class="btn btn-primary" href="{{week15.angrouting.source}}" download>Source Code</a>
-			</li>
-			<li>
-				Angular Login App
-				<a class="btn btn-secondary" href="{{week15.anglogin.demo}}" target="_blank">Demo</a> 
-				<a class="btn btn-primary" href="{{week15.anglogin.source}}" download>Source Code</a>
-			</li>
-		</ol>
-	</div>
+		<!-- week 14 -->
+		<div ng-controller="week14Ctrl">
+			<h2>Week: 14</h2>
+			<h3>Google APIs and More</h3>
+			<ol>
+				<!-- <li>
+					<span>{{week14.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week14.youtube.url}}" target="_blank">Week 14 Videos</a>
+				</li> -->
+				<li>
+					<span>{{week14.googlemaps.title}}</span>
+					<a class="btn-codify-secondary" href="{{week14.googlemaps.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week14.googlemaps.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week14.googlebooks.title}}</span>
+					<a class="btn-codify-secondary" href="{{week14.googlebooks.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week14.googlebooks.source}}" download>Source Code</a>
+				</li>
+				<!-- <li>
+					<span>{{week14.instagram.title}}</span>
+					<a class="btn-codify-secondary" href="{{week14.instagram.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week14.instagram.source}}" download>Source Code</a>
+				</li> -->
+			</ol>
+		</div>
 
-	<!-- week 16 -->
-	<div ng-controller="week16Ctrl">
-		<h2>Week: 16</h2>
-		<h3>Final Class</h3>
-		<ol>
-			<!-- <li>
-				YouTube Channel 
-				<a class="btn btn-secondary" href="{{week16.youtube}}" target="_blank">Week 16 Videos</a>
-			</li> 
-			<li>
-				In Class JavaScript 
-				<a class="btn btn-secondary" href="{{week15.source}}" target="_blank">Source Code</a>
-			</li> -->
-		</ol>
-	</div>
+		<!-- week 15 -->
+		<div ng-controller="week15Ctrl">
+			<h2>Week: 15</h2>
+			<h3>AngularJS Framework</h3>
+			<ol>
+				<!-- <li>
+					<span>{{week15.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week15.youtube.url}}" target="_blank">Week 15 Videos</a>
+				</li> -->
+				<li>
+					<span>{{week15.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week15.classcode.url}}" target="_blank">Source Code</a>
+				</li>
+				<li>
+					<span>{{week15.angrouting.title}}</span>
+					<a class="btn-codify-secondary" href="{{week15.angrouting.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-secondary" href="{{week15.angrouting.original}}" download>Original</a> 
+					<a class="btn-codify-primary" href="{{week15.angrouting.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week15.anglogin.title}}</span>
+					<a class="btn-codify-secondary" href="{{week15.anglogin.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week15.anglogin.source}}" download>Source Code</a>
+				</li>
+			</ol>
+		</div>
 
-	<!-- angular js app / myctrl -->
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/controllers/myctrl.js"></script>
-	
-	<!-- weekly controllers -->
-	<script type="text/javascript" src="js/controllers/week01ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week02ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week03ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week04ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week05ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week06ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week07ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week08ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week09ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week10ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week11ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week12ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week13ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week14ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week15ctrl.js"></script>
-	<script type="text/javascript" src="js/controllers/week16ctrl.js"></script>
-</body>
+		<!-- week 16 -->
+		<div ng-controller="week16Ctrl">
+			<h2>Week: 16</h2>
+			<h3>Final Class</h3>
+			<ol>
+				<!-- <li>
+					<span>{{week16.youtube.title}}</span>
+					<a class="btn-codify-secondary" href="{{week16.youtube.url}}" target="_blank">Week 16 Videos</a>
+				</li> -->
+				<li>
+					<span>{{week16.classcode.title}}</span>
+					<a class="btn-codify-secondary" href="{{week16.classcode.url}}" target="_blank">Source Code</a>
+				</li> 
+			</ol>
+		</div>
+
+		<!-- angular js app / myctrl -->
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers/myctrl.js"></script>
+		
+		<!-- weekly controllers -->
+		<script type="text/javascript" src="js/controllers/week01ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week02ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week03ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week04ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week05ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week06ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week07ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week08ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week09ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week10ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week11ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week12ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week13ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week14ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week15ctrl.js"></script>
+		<script type="text/javascript" src="js/controllers/week16ctrl.js"></script>
+
+		<!-- custom JavaScript -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>

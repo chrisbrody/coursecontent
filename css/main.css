@@ -1,30 +1,68 @@
 body {
 	background-color: #e4e4e4;
-
 }
+
 div > h2 {
 	color: rgba(0,0,0,0.55);
 	font-size: 13px;
 	font-weight: 400;
 	margin: 0;
-    padding: 10px 25px 0;
-
+    padding: 25px 25px 0;
 }
-div h3 {
+
+div > h3 {
 	color: rgba(0,0,0,0.55);
 	font-size: 18px;
 	font-weight: 500;
 	margin: 0;
     padding: 5px 25px 15px;
 }
+
 body div:nth-child(1) {
 	text-align: center;
 }
+
 body div:nth-child(n + 2) {
 	background-color: rgba(255, 255, 255, 1);
 	cursor: pointer;
 	height: 78px;
 	margin: 10px 5%;
 	overflow: hidden;
-	padding: 15px 0;
+}
+
+li {
+	margin: 5px 0;
+}
+
+li > span {
+	display: inline-block;
+	width: 200px;
+}
+
+li a {
+	color: #fff;
+	display: inline-block;
+	font-size: 0.9rem;
+	padding: 10px 15px;
+	text-align: center;
+	width: 140px;
+}
+
+li a:hover,
+li a:focus {
+	color: #C4C4C4;
+	text-decoration: none;
+} 
+
+.btn-codify-secondary {
+	background-color: #1abc9c;
+}
+
+.btn-codify-primary {
+	background-color: red;
+}
+
+
+.currentElement {
+	height: 100% !important;
 }
