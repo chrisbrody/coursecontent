@@ -3,12 +3,12 @@ app.controller('week4Ctrl', function($scope) {
 		googleresponsive : {
 			demo : 'http://codifyacademy.com/google-responsive/',
 			source : 'sourcecode/wk04/googleresponsivesource.zip',
-			title : '37 Signals Responsive'
+			title : 'Google Responsive'
 		},
 		signalsresponsive : {
 			demo : 'http://codifyacademy.com/salespage-responsive/',
 			source : 'sourcecode/wk04/salespageresponsivesource.zip',
-			title : 'Google Responsive'
+			title : '37 Signals Responsive'
 		},
 		youtube : {
 			title : 'YouTube Channel',
