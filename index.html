@@ -3,21 +3,17 @@
 	<head>
 		<!-- meta content -->
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="description" content="Codify Academy's Course Content Links">
 	    <meta name="author" content="Chris Brody @ Codify Academy">
 
 	    <!-- title -->
 		<title>Codify Academy Course Content Links</title>
 
-		<!-- favicon -->
 		<link rel="shortcut icon" href="favicon.ico">
-		<!-- css -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
-		<!-- javascript -->
-		<script src="js/jquery.js"></script>
-		<script src="js/angular.min.js"></script>
+		
 	</head>
 
 	<body ng-app="myApp">
@@ -29,6 +25,23 @@
 		<div ng-controller="week1Ctrl">
 			<h2>Week: 1</h2>
 			<h3>Basic HTML &amp; CSS and Website Replications</h3>
+			<!-- Add Next round
+			<div>Weekly Class Links</div>
+			<ul>
+				<li>
+					<a href="{{week1.links.litmos.url}}" target="_blank">{{week1.links.litmos.title}}</a>
+				</li>
+				<li>
+					<a href="{{week1.links.w3schools.url}}" target="_blank">{{week1.links.w3schools.title}}</a>
+				</li>
+				<li>
+					<a href="{{week1.links.htmlValidator.url}}" target="_blank">{{week1.links.htmlValidator.title}}</a>
+				</li>
+				<li>
+					<a href="{{week1.links.cssValidator.url}}" target="_blank">{{week1.links.cssValidator.title}}</a>
+				</li>
+			</ul>
+			<div>Weekly Class Code and Videos</div> -->
 			<ol>
 				<li>
 					<span>{{week1.youtube.title}}</span>
@@ -45,14 +58,14 @@
 					<a class="btn-codify-primary" href="{{week1.logo.source}}" download>Source Code</a>
 				</li>
 				<li>
-					<span>{{week1.strict.title}}</span> 
-					<a class="btn-codify-secondary" href="{{week1.strict.demo}}" target="_blank">Demo</a> 
-					<a class="btn-codify-primary" href="{{week1.strict.source}}" download>Source Code</a>
-				</li>
-				<li>
 					<span>{{week1.pico.title}}</span> 
 					<a class="btn-codify-secondary" href="{{week1.pico.demo}}" target="_blank">Demo</a> 
 					<a class="btn-codify-primary" href="{{week1.pico.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week1.strict.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week1.strict.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week1.strict.source}}" download>Source Code</a>
 				</li>
 			</ol>
 		</div>
@@ -76,14 +89,14 @@
 					<a class="btn-codify-primary" href="{{week2.visual.source}}" download>Source Code</a>
 				</li>
 				<li>
-					<span>{{week2.metro.title}}</span> 
-					<a class="btn-codify-secondary" href="{{week2.metro.demo}}" target="_blank">Demo</a> 
-					<a class="btn-codify-primary" href="{{week2.metro.source}}" download>Source Code</a>
-				</li>
-				<li>
 					<span>{{week2.myfolio.title}}</span> 
 					<a class="btn-codify-secondary" href="{{week2.myfolio.demo}}" target="_blank">Demo</a> 
 					<a class="btn-codify-primary" href="{{week2.myfolio.source}}" download>Source Code</a>
+				</li>
+				<li>
+					<span>{{week2.metro.title}}</span> 
+					<a class="btn-codify-secondary" href="{{week2.metro.demo}}" target="_blank">Demo</a> 
+					<a class="btn-codify-primary" href="{{week2.metro.source}}" download>Source Code</a>
 				</li>
 			</ol>
 		</div>
@@ -411,6 +424,11 @@
 				</li> 
 			</ol>
 		</div>
+
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<script src="js/angular.min.js"></script>
 
 		<!-- angular js app / myctrl -->
 		<script type="text/javascript" src="js/app.js"></script>

@@ -2,6 +2,10 @@ body {
 	background-color: #e4e4e4;
 }
 
+div > h1 {
+	margin: 25px 0;
+}
+
 div > h2 {
 	color: rgba(0,0,0,0.55);
 	font-size: 13px;
@@ -18,11 +22,11 @@ div > h3 {
     padding: 5px 25px 15px;
 }
 
-body div:nth-child(1) {
+body > div:nth-child(1) {
 	text-align: center;
 }
 
-body div:nth-child(n + 2) {
+body > div:nth-child(n + 2) {
 	background-color: rgba(255, 255, 255, 1);
 	cursor: pointer;
 	height: 78px;
@@ -39,7 +43,7 @@ li > span {
 	width: 200px;
 }
 
-li a {
+li a[class^="btn"] {
 	border-radius: 10px;
 	color: #fff;
 	display: inline-block;
@@ -49,8 +53,8 @@ li a {
 	width: 140px;
 }
 
-li a:hover,
-li a:focus {
+li a[class^="btn"]:hover,
+li a[class^="btn"]:focus {
 	border: 1px solid transparent;
     color: #fff;
     cursor: pointer;
@@ -71,7 +75,7 @@ li a:focus {
 
 .btn-codify-primary {
 	background-color: #3E4246;
-    border-color: #54595f;
+    border: 1px solid #54595f;
     transition: 0.3s all ease-in-out;
 }
 
@@ -87,4 +91,33 @@ li a:focus {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+
+
+
+
+@media (max-width:650px) {
+	li > span {
+		display: block;
+	}
+	div > h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width:580px) {
+	div > h2 {
+		font-size: 12px;
+	}
+	div > h3 {
+		font-size: 14px;
+	}
+	li a[class^="btn"] {
+		width: 87%;
+    	margin-bottom: 5px;
+	}
+	body > div:nth-child(n + 2) {
+		margin: 10px 2%;
+	}
 }
